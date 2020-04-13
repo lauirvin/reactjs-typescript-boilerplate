@@ -1,20 +1,20 @@
 module.exports = {
   env: {
     browser: true,
-    es6: true
+    es6: true,
   },
   extends: ["airbnb", "plugin:@typescript-eslint/recommended"],
   globals: {
     Atomics: "readonly",
-    SharedArrayBuffer: "readonly"
+    SharedArrayBuffer: "readonly",
   },
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
     ecmaVersion: 2018,
-    sourceType: "module"
+    sourceType: "module",
   },
   plugins: ["react", "@typescript-eslint", "react-hooks"],
   rules: {
@@ -24,10 +24,10 @@ module.exports = {
     "react/jsx-filename-extension": [
       1,
       {
-        extensions: [".jsx", ".tsx"]
-      }
+        extensions: [".jsx", ".tsx"],
+      },
     ],
-    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/exhaustive-deps": 0,
     "no-use-before-define": 0,
     "no-underscore-dangle": 0,
     "no-tabs": 0,
@@ -44,6 +44,7 @@ module.exports = {
     "@typescript-eslint/camelcase": 0,
     "jsx-a11y/media-has-caption": 0,
     "react/jsx-props-no-spreading": 0,
-    "no-nested-ternary": 0
-  }
+    "no-nested-ternary": 0,
+    "react/no-danger": 0,
+  },
 };
