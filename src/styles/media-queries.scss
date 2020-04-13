@@ -1,0 +1,67 @@
+/* High Resolution Desktop or Laptop Devices */
+@mixin extraLargeScreen() {
+  @media (min-width: 1281px) {
+    @content;
+  }
+}
+
+/* Low Resolution Desktop or Laptops */
+@mixin largeScreen() {
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    @content;
+  }
+}
+
+/* Tablet Devices (Portrait) */
+@mixin mediumScreen() {
+  @media (min-width: 768px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+/* Tablet Devices (Landscape) */
+@mixin mediumScreenLandscape() {
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+/* Mobile Devices - Smartphones */
+@mixin smallScreen() {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+/* Mobile Devices - Smartphones (Landscape) */
+@mixin smallScreenLandscape() {
+  @media (max-width: 767px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+/* iPhone SE Size */
+@mixin extraSmallScreen() {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
+
+@mixin mobileView() {
+  @include smallScreen() {
+    @content;
+  }
+  @include mediumScreen() {
+    @content;
+  }
+}
+
+@mixin mobileViewLandscape() {
+  @include smallScreenLandscape() {
+    @content;
+  }
+
+  @include mediumScreenLandscape() {
+    @content;
+  }
+}
