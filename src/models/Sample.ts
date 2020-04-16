@@ -1,3 +1,3 @@
 export interface Sample {
-	_id: string;
+	_id: number;
 }

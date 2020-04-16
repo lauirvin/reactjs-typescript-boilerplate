@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-	baseURL: 'https://cms-api.aia-rewards.com/',
+	baseURL: 'https://www.random.org/',
 	timeout: 5000,
 	headers: { 'Content-Type': 'application/json' },
 });
@@ -15,3 +15,4 @@ export const setLang = (lang: string) => {
 };
 
 export default instance;
+

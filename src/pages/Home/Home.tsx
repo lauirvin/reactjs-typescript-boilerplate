@@ -6,6 +6,7 @@ const Home = () => (
 	<div>
 		<h1>Welcome to Home, Below is A Sample Component.</h1>
 		<Link to="/redux-sample">Redux Sample</Link>
+		<Link to="/redux-sample-api">Redux Sample</Link>
 		<SampleComponent />
 	</div>
 );
