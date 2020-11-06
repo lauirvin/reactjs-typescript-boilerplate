@@ -6,13 +6,12 @@ const instance = axios.create({
 	headers: { 'Content-Type': 'application/json' },
 });
 
-export const setToken = (token: string) => {
+export const setToken = (token: string): void => {
 	instance.defaults.headers.common['x-access-token'] = token;
 };
 
-export const setLang = (lang: string) => {
+export const setLang = (lang: string): void => {
 	instance.defaults.headers.common['x-language'] = lang;
 };
 
 export default instance;
-

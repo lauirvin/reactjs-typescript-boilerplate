@@ -1,8 +1,13 @@
-import { put, takeLatest, call } from 'redux-saga/effects';
+import {
+	put, takeLatest, call, ForkEffect, CallEffect, PutEffect,
+} from 'redux-saga/effects';
+import { AxiosResponse } from 'axios';
+import { Action } from 'typesafe-actions';
 import * as DatasActions from './action';
 import { fetchDatas } from '../../../api';
 
-export function* handleFetchDatas() {
+export function* handleFetchDatas():
+Generator<CallEffect<AxiosResponse> | PutEffect<Action<string>>, void, unknown> {
 	try {
 		const datas = yield call(fetchDatas);
 		yield put(DatasActions.fetchDatasSuccess(datas));
@@ -11,6 +16,7 @@ export function* handleFetchDatas() {
 	}
 }
 
-export function* watchFetchDatas() {
+export function* watchFetchDatas():
+Generator<ForkEffect<never>, void, unknown> {
 	yield takeLatest(DatasActions.FETCH_DATAS, handleFetchDatas);
 }

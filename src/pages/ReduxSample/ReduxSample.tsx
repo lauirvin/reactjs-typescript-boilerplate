@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { ChangeEvent, useState } from 'react';
 import { Dispatch } from 'redux';
 import { connect } from 'react-redux';
 import { RootState } from 'MyTypes';
@@ -13,7 +13,7 @@ interface Props {
 const ReduxSample = ({ setText, text }: Props) => {
 	const [input, setInput] = useState('');
 
-	const handleInputChange = (e: any) => {
+	const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
 		setInput(e.target.value);
 	};
 

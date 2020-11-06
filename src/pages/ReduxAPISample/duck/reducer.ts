@@ -2,7 +2,7 @@ import { ActionType } from 'typesafe-actions';
 import * as DatasActions from './action';
 
 export interface State {
-	data: any;
+	data: unknown;
 	error?: string;
 }
 

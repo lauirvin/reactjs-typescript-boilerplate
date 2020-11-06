@@ -5,7 +5,7 @@ import Home from '../pages/Home/Home';
 import ReduxSample from '../pages/ReduxSample/ReduxSample';
 import ReduxAPISample from '../pages/ReduxAPISample/ReduxAPISample';
 
-export default () => (
+export default (): JSX.Element => (
 	<Router>
 		<Switch>
 			<Route exact path="/" component={Home} />

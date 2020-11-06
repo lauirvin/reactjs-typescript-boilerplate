@@ -7,7 +7,7 @@ import { selectDatasData } from './duck/selector';
 
 interface Props {
 	fetchDatas: () => void;
-	datas: any | null;
+	datas: unknown | null;
 }
 
 const ReduxAPISample = ({ datas, fetchDatas }: Props) => {
