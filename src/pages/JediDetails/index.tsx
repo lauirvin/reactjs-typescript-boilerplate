@@ -4,7 +4,10 @@ import { JediResponse } from '../../types';
 
 const JediDetails = (): JSX.Element => {
   const { jediId } = useParams();
-  const { isLoading, data: response } = useFetchJedi(jediId || 'undefined', { staleTime: 5000, cacheTime: 5000 });
+  const { isLoading, data: response } = useFetchJedi(jediId || 'undefined', {
+    staleTime: 5000,
+    cacheTime: 5000,
+  });
   const { status, data, error } = (response || {}) as JediResponse;
 
   /* ------------ Handle All Errors and use API Response Error ------------ */

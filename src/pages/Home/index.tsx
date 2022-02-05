@@ -23,13 +23,12 @@ const Home = (): JSX.Element => {
       />
       <Link to="/jedis">
         Jedis(
-        {data?.count}
-        )
+        {data?.count})
       </Link>
       <button
         type="button"
         onClick={() => {
-            dispatch(clearUserDetails());
+          dispatch(clearUserDetails());
         }}
       >
         Clear Name
