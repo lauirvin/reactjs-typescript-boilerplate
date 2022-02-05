@@ -21,10 +21,6 @@ const Home = (): JSX.Element => {
         }}
         value={userDetails.name}
       />
-      <Link to="/jedis">
-        Jedis(
-        {data?.count})
-      </Link>
       <button
         type="button"
         onClick={() => {
@@ -33,6 +29,11 @@ const Home = (): JSX.Element => {
       >
         Clear Name
       </button>
+      <Link to="/jedis">
+        Jedis(
+        {data?.count}
+        )
+      </Link>
     </div>
   );
 };
