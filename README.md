@@ -1,46 +1,76 @@
-# Getting Started with Create React App
+<p align="center">
+  <a href="https://github.com/lauirvin/reactjs-typescript-boilerplate">
+    <img alt="logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" width="150" />
+  </a>
+</p>
+<h1 align="center">
+  ReactJS TypeScript Boilerplate
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 📚 Introduction
 
-## Available Scripts
+This is a ReactJS boilerplate project bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-In the project directory, you can run:
+The intention of this boilerplate is for creating a template with the essential libraries such as Typescript, React Query, Redux Thunk setup and ready to use right off the bat.
 
-### `yarn start`
+# 🧰 Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Project Dependencies
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Install [NodeJS](https://nodejs.org/en/)
+2. Install [nvm](https://github.com/nvm-sh/nvm)
+3. Install and use NodeJS v16.9.0 with nvm
 
-### `yarn test`
+```
+nvm install 16.9.0 && nvm use 16.9.0
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Install [yarn](https://classic.yarnpkg.com/en/)
+5. Install [Prettier ESLint VSCode Extension:](https://marketplace.visualstudio.com/items?itemName=rvest.vs-code-prettier-eslint)
 
-### `yarn build`
+# 🚀 Development
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Locate the repository root directory in terminal/bash
+2. Install dependencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+yarn install
+```
 
-### `yarn eject`
+3. Run `yarn dev` in the repository root directory
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Prettier & ESLint
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### ESLint Lint Check
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+yarn lint
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Prettier Lint Check
 
-## Learn More
+```
+yarn format
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Fix both Prettier and ESLint errors
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+yarn lint:fix
+```
+
+<br/>
+
+# 👷🏻‍♂️ Built With
+
+- [ReactJS v17](https://reactjs.org/) - Frontend Javascript web framework
+- [TypeScript](https://www.typescriptlang.org/) - Open-source language which builds on JavaScript
+- [React Query](https://react-query.tanstack.com/) - Data fetching and caching library
+- [Redux Thunk](https://github.com/reduxjs/redux-thunk) - Redux state management middleware
+
+# 👨🏻‍🎨 Author
+
+- **Irvin Ives Lau** - [lauirvin](https://github.com/lauirvin)
+- https://www.irviniveslau.com
