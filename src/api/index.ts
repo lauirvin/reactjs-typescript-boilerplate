@@ -2,11 +2,11 @@ import { JediResponse, JedisResponse } from '../types';
 import axios from './axios';
 
 export const fetchJedis = (): Promise<JedisResponse> =>
-  axios.get('http://swapi.dev/api/people').then((res) => res.data);
+  axios.get('/api/people').then((res) => res.data);
 
 export const fetchJedi = (id: string): Promise<JediResponse> =>
   axios
-    .get(`http://swapi.dev/api/people/${id}`)
+    .get(`/api/people/${id}`)
     .then((res) => ({
       status: res.status,
       data: res.data,
