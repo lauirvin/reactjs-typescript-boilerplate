@@ -1,12 +1,23 @@
-import { JediResponse, JedisResponse } from '../types';
+import { SampleResponse } from '../types';
 import axios from './axios';
 
-export const fetchJedis = (): Promise<JedisResponse> =>
-  axios.get('http://swapi.dev/api/people').then((res) => res.data);
-
-export const fetchJedi = (id: string): Promise<JediResponse> =>
+export const fetchSample = (): Promise<SampleResponse> =>
   axios
-    .get(`http://swapi.dev/api/people/${id}`)
+    .get('/')
+    .then((res) => ({
+      status: res.status,
+      data: res.data,
+      error: null,
+    }))
+    .catch((err) => ({
+      status: err.response.status,
+      error: err.response.data,
+      data: null,
+    }));
+
+export const postSample = (name: string, result: string): Promise<SampleResponse> =>
+  axios
+    .post('/', { name, result })
     .then((res) => ({
       status: res.status,
       data: res.data,

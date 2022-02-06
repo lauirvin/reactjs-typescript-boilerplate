@@ -1,2 +1,1 @@
-export * from './useFetchJedis';
-export * from './useFetchJedi';
+export * from './useWindowSize';

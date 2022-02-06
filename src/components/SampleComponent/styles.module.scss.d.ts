@@ -1,9 +1,5 @@
 export type Styles = {
-  ctaButton: string;
-  modDisabled: string;
-  modFill: string;
-  modInvert: string;
-  modNoBorder: string;
+  container: string;
 };
 
 export type ClassNames = keyof Styles;

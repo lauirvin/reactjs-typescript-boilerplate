@@ -1,1 +1,1 @@
-export * from './Jedi';
+export * from './SampleResponse';

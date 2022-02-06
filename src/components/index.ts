@@ -1,1 +1,1 @@
-export * from './CTAButton';
+export * from './SampleComponent';
