@@ -12,9 +12,9 @@ export const useFetchJedis = (options?: Options): UseQueryResult<JedisResponse, 
   const query = useQuery('fetchJedis', fetchJedis, {
     ...options,
     select: (res: JedisResponse) => {
-      /* ------------ Insert transform logic ------------ */
+      /** ------------ Insert transform logic ------------ */
       if (res?.results) {
-        /* ------------ Create id property via [url] value ------------ */
+        /** ------------ Create id property via [url] value ------------ */
         const results = res?.results?.map((x) => ({
           ...x,
           id: getLastUrlSegment(x.url),
