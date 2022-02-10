@@ -12,6 +12,7 @@
     "@types/react-dom": "^17.0.9",
     "axios": "^0.25.0",
     "classnames": "^2.3.1",
+    "husky": "^4.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-query": "^3.34.12",
@@ -61,9 +62,13 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
-    "husky": "^7.0.4",
     "prettier": "^2.5.1",
     "sass": "^1.49.7",
     "typed-scss-modules": "^5.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint:fix"
+    }
   }
 }
