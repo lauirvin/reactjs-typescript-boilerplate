@@ -7,6 +7,8 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'airbnb',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -16,11 +18,7 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: [
-    'react',
-    '@typescript-eslint',
-    'react-hooks',
-  ],
+  plugins: ['react', '@typescript-eslint', 'react-hooks'],
   rules: {
     'operator-linebreak': 0,
     indent: 0,
