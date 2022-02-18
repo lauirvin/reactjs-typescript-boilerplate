@@ -5,7 +5,9 @@ interface Props {
   foo?: string;
 }
 
-export const SampleComponent = memo<Props>(({ foo }) => <div className={styles.container}>SampleComponent</div>);
+export const SampleComponent = memo<Props>(({ foo }) => (
+  <div className={styles.container}>SampleComponent</div>
+));
 
 SampleComponent.displayName = 'SampleComponent';
 

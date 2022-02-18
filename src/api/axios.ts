@@ -4,7 +4,7 @@ import Config from '../Config';
 const instance = axios.create({
   baseURL: Config.baseUrl,
   timeout: 5000,
-  headers: { 'Content-Type': 'application/json' },
+  headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' },
 });
 
 export const setToken = (token: string): void => {
