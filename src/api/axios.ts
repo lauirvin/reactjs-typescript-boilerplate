@@ -2,9 +2,9 @@ import axios from 'axios';
 import Config from '../Config';
 
 const instance = axios.create({
-  baseURL: Config.baseUrl,
+  baseURL: Config.baseUrl, // http://localhost:8080
   timeout: 5000,
-  headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' },
+  headers: { 'Content-Type': 'application/json' },
 });
 
 export const setToken = (token: string): void => {
