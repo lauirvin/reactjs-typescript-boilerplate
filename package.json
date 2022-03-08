@@ -32,7 +32,7 @@
     "eject": "react-scripts eject",
     "watch:typed-sass": "typed-scss-modules src --watch --exportType default --nameFormat camel",
     "lint": "eslint \"**/*.{ts,tsx}\"",
-    "format": "prettier --write '*/**/*.{js,ts,tsx}'",
+    "format": "prettier --write \"*/**/*.{js,ts,tsx}\"",
     "lint:fix": "yarn lint --fix && yarn format"
   },
   "eslintConfig": {
